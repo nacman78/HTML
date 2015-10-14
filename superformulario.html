@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <title>tablas</title>
+  <meta name="keywords" value="meta, html, cp3">
+  <meta name="description" value="ejercicio formulario completo HTML">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <form name="formulariosuper" action="superformulario.html" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>SUPER-FORMULARIO ALTA</legend>
+      <div><label for="campo_nombre">Nombre:</label></div>
+      <div><input type="text" id="campo_nombre" name="nombre" placeholder="nombre"/></div>
+      <div><label for="login">Nombre:</label></div>
+      <div><input type="text" id="login" name="login" placeholder="nombre"/></div>
+      <div><label for="password">Contraseña</label></div>
+      <div><input type="password" id="password" name="password" placeholder="contraseña"/><br>
+      <div><label for="asunto">Asunto</label></div>
+      <div><input type="text" id="campo_nombre" name="asunto" placeholder="asunto"/></div>
+      <div><label for="texto">Texto</label></div>
+      <div><textarea name="texto" id="texto" cols="40" rows="10"></textarea></div>
+      <div><label for="estado">ESTADO CIVIL</label></div>
+      <div><select name="estado" id="estado">
+            <option value="0">-------</option>
+            <option value="c">CASADO</option>
+            <option value="s" selected="selected">SOLTERO</option>
+            <option value="se">SOLTERO Y ENTERO</option>
+      </select></div>
+      <div><label for="posesiones">POSESIONES</label></div>
+      <div><select name="posesiones" id="posesiones" multiple="multiple" size="7">
+        <optgroup label="vehículos">
+            <option value="35">COCHE</option>
+            <option value="37">MOTO</option>
+        </optgroup>
+        <optgroup label="inmuebles">
+            <option value="45">CASA</option>
+        </optgroup>
+        <optgroup label="teléfonos">
+            <option value="55" selected="selected">IPHONE</option>
+            <option value="65">Blackbirria</option>
+            <option value="75">Windows Phone</option>
+        </optgroup>
+      </select></div>
+      <label for="titulaciones">TITULACIONES</label>
+      <div>
+        <input type="checkbox" name="titulacion" id="eso" value="eso"/>
+        <label for="eso">ESO</label>
+      </div>
+      <div>
+        <input type="checkbox" name="titulacion" id="bachiller" value="eso"/>
+        <label for="bachiller">BACHILLER</label>
+      </div>
+      <div>
+        <input type="checkbox" name="titulacion" id="cs" value="cs"/>
+        <label for="cs">CICLO SUPERIOR</label>
+      </div>
+
+      <div><label for="sexo">SEXO</label></div>
+      <div>
+        <input type="radio" name="sexo" id="hombre" value="H"/>
+        <label for="eso">HOMBRE</label>
+      </div>
+      <div>
+        <input type="radio" name="sexo" id="mujer" value="M"/>
+        <label for="bachiller">MUJER</label>
+      </div>
+      <input type="hidden" name="codigo" id="codigo" value="666"/>
+      <div>
+        <label for="foto">FOTO</label>
+        <input type="file" name="fichero" id="fichero" />
+      </div>
+
+      <div>
+        <input type="submit" name="send" value="enviar">
+      </div>
+      <div>
+        <input type="button" name="send" value="enviar">
+      </div>
+    </fieldset>
+
+
+</body>
+</html>

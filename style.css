@@ -1,0 +1,19 @@
+h1{
+  color:red;
+}
+.titulo{
+  background-color: #cccccc;
+  padding: 5px;
+  border-radius: 3px;
+  width: 200px;
+  text-align: center;
+
+}
+.titulo:hover{
+  color:#fff;
+  background-color: #F11504;
+}
+
+th{
+  background-color: #ccc;
+}
